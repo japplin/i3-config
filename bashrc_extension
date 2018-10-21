@@ -1,0 +1,8 @@
+alias clipboard="xclip -i -selection clipboard"
+alias reloadRC="source ~/.bashrc"
+alias updateGitConfig="mv ~/.i3/config ~/git/i3-config/config"
+
+reloadConfig() {
+	i3-msg reload
+	i3-msg restart
+}
